@@ -1,0 +1,52 @@
+ALGORITHM Algosentence
+VAR
+    sentence: STRING ;  // sentence entered by internot 
+    vowels, character,i: INTEGER = 0 ; // variable  to  
+    nbr : INTEGER ;
+    word : INTEGER = 1 ;
+
+BEGIN
+    nbr = sentence.lenght ;
+
+    REPEAT
+        write ( please write a sentence ) ;  // affichager for user our site 
+        read  ( sentence ) ;  // read the sentence by code 
+    UNTIL (sentence [nbr]= ".")
+
+    tolowelcase ( sentence )   // revense sentence to lowelocase
+
+    FOR i FROM 0 TO nbr STEP 1  DO
+        IF (sentence [i]= " ") THEN
+          word =++ ;
+        ELSE
+           character =++ ;
+        END_IF
+         
+          
+          IF (sentence [i]= "a") THEN
+               vowels =+1 ;
+          ELSE_IF (sentence [i]= "e") THEN
+            vowels =+1 ;
+          ELSE_IF (sentence [i]= "i") THEN
+            vowels =+1 ;
+          ELSE_IF (sentence [i]= "o") THEN
+               vowels =+1 ;
+          ELSE_IF (sentence [i]= "u") THEN
+            vowels =+1 ;
+          ELSE_IF (sentence [i]= "y") THEN
+            vowels =+1 ;
+         ELSE
+              break;
+        END_IF
+
+    END_FOR
+
+
+     write ("The nombre of word in your sentence is " , words) ;
+     write ("The nombre of word in your sentence is ", character );
+     write ("The nombre of word in your sentence is  ", vowels);
+     
+
+
+
+END

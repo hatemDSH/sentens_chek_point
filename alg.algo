@@ -1,0 +1,21 @@
+ALGORITHM cpalgo
+VAR
+    phrase: STRING
+    vowels, character,i: INTEGER = 0
+    n : INTEGER
+    word : INTEGER = 1
+BEGIN
+    n = phrase.lenght
+    REPEAT
+            write ( please tape a sentence )
+            read ( phrase )    
+    UNTIL (phrase [n]= ".")
+    tolowelcase ( phrase )
+    FOR i FROM 0 TO n STEP 1  DO
+        IF (phrase [i]= " ") THEN
+        word =+1
+        ELSE
+        character =+1
+        END_IF
+        SWITCH (phrase [i]) DO
+            case "a" : vowels =+1 break ;
